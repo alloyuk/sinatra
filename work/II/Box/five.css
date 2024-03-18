@@ -1,0 +1,48 @@
+/* ***** 배치 ***** */
+/* body {
+  /* margin: 0; 
+} */
+
+
+h3 {
+  border: 1px solid gray;
+  background-color: antiquewhite; 
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red-box {
+  background-color: red;
+  /* position: relative;
+  z-index: 10px; */
+  float: left;
+}
+
+.green-box {
+  background-color: green;
+  /* position: absolute;
+  left: 0px;
+  top: 0px; */
+  float: left;
+  
+  
+}
+
+.blue-box {
+  background-color: blue;
+  /* position: fixed;
+  top: 30px;
+  right: 100px; */
+  clear: left;;
+
+}
+
+/* float : none, left, right */
+
+img {
+  float: right;
+  margin-left: 20px;
+}

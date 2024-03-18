@@ -1,0 +1,95 @@
+/* 단위
+-절대단위 : px
+-상대단위 : %, em, rem, vw,vh */
+
+/* 색상 표기법
+- 색상명
+- RGB 색상
+    rgb(red, green, blue) 0~255
+    rgba(red, green, blue, alpha)
+      알파(투명도) 0~1
+
+- HEX표기(16진수)
+    #RRGGBB    
+      00~ff #ff0000 = #f00 */
+
+/* 글자 스타일 교재 180페이지
+  font-weight (normal, bold, bolder, 100~900
+  font-size (크기, 16px 기본 등등
+  line-height (글꼴지정)
+  text-indent(문자 첫 줄의 들여쓰기)
+*/
+
+h3{
+  font-family: "궁서체";/*글꼴 저장 코드 */
+}
+
+.single-day-regular {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.single-day-regular {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px; /* h1 32px */
+}
+*{margin: 0;}
+p {
+  width: 300px;
+  height:300px;
+  background-color: aquamarine;
+  padding: 10px 30px;
+  border: 4px solid red;
+ 
+ 
+}
+
+
+p.p4 {
+  color: red;
+  font-size: 16px;
+  line-height: 32px;/* 웬만해서 font size 보다 크게 줘야 글자가 안 겹침 */
+  margin-bottom: 20px;
+  border-bottom-color: blue;
+  border-bottom-style: dashed;
+  border-radius: 50px;
+}
+
+p.p1{
+  text-align: center;
+  min-width: 500px;
+
+}
+
+p.p3{
+  text-decoration: underline;
+  letter-spacing: 20px;
+}
+
+p.p2{
+  
+}
+
+div{
+  width:100px;/* 콘텐츠가 표시되는 크기 */
+  height:100px;/* 콘텐츠가 표시되는 크기 */
+  padding: 10px;
+  border:1px solid black;
+  margin:10px;
+  box-sizing: border-box; /* 정밀한 사이즈 조정 교재 171-174페이지에 설명 */
+
+}
+
+/* 박스 모델 교재 157~162페이지 */
+/* 박스 모델 코드 width, height auot(브라우저가 너비를 계산)
+단위(px 등)
+min-width, min- height
+margin 여백 지우기
+margin-top
+margin-bottom...
+padding-bottom...
+...)*/
+/* content-box 는 기본값이라 거의 사용할 일 없음 */

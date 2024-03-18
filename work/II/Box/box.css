@@ -1,0 +1,49 @@
+h3 {
+  border: 1px solid gray;
+  background-color: antiquewhite;
+  /* display: none; /* 이 코드는 속성값을 없애는 것 */
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  /* display: inline; /* 여따 쓰면 위의 위드와 헤이트는 적용 x */
+
+}
+.box1 {
+  background-color: antiquewhite;
+  /* display: inline; */
+  width: 100px;
+  height: 100px;
+  overflow: scroll; /* 휠이 생김 창 안에 조절해넣어줌*/
+}
+
+.box2 {
+  background-color: aqua;
+  /* display: inline; */
+  background-image: url("image/real cat.jpg");
+  /* background-size: 100px 100px; */
+  width: 300px; 
+  height: 300px;
+  /* 사진의 원래 크기보다 크게 하면 바둑판식
+   작게하면 잘림 */
+  /*background-size: cover; /* 커버? 꽉 
+  컨테인? 채울때까지 타일 규칙 반복
+  논 리펙트? 오직 하나만, 여기서 백그컬러 넣음 색ㅇ*/
+  /*background-repeat: no-repeat; /* no-repeat
+  space 작은 이미지로 해야 안 잘림 */
+  /* background-position: center;/* x축과 y축, 센터는 중앙배치 */
+  /*background-attachment: scroll; /* 픽스 바 넘김 알빠노 위치 고정
+  스크롤은 같이가요 */
+  background: red url("image/real cat.jpg") no-repeat center/100% 100% fixed;
+  /* 위처럼 한꺼번에 해도 가능 순서 지켜 */
+}
+
+span {
+ width: 100px;
+ height: 100px;
+ display: block;
+ background-color: #ff0000;
+ margin: 20px; /* 공간 */
+ opacity: 0.7;
+}
