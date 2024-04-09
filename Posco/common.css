@@ -1,0 +1,249 @@
+#header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: aqua; /* 임시 */
+}
+
+.gnb {
+  min-height: 80px;
+  padding: 10px 0.5rem 0 10.5rem;
+  font-size: 0;
+  letter-spacing: -4px;
+  line-height: 0;
+}
+
+#header>div>.logobox a {
+  height: 100%;
+  display: block;
+  background: url(/poimage/logo.png) no-repeat center;
+}
+
+.gnb>li {
+  display: inline-block;
+  vertical-align: top;
+  width: 12rem;
+  line-height: 1;
+}
+
+.gnb>li.selected>a {
+  font-weight: 700;
+  color: #022658;
+}
+
+.gnb>li>a {
+  /*height: 61px;*/
+  padding: 10px 0.769rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 61px;
+  color: #222;
+}
+
+.lng_btn a {
+  position: absolute;
+  top: 25px;
+  right: 1.6154rem;
+  width: 30px;
+  height: 30px;
+  text-indent: -999rem;
+  background: url(poimage/leng_icon.png) no-repeat center;
+  background-size: contain;
+}
+div {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.jumpto_top {
+  right: -3.8rem;
+  top: -67px;
+}
+
+.jumpto_top {
+  z-index: 700;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #505050;
+}
+
+#footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 87px;
+  background: #1f282e;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+#footer>div:first-of-type {
+  max-width: 1170px;
+  height: 87px;
+  margin: 0 auto;
+  padding: 30px 1rem;
+  font-size: 1rem;
+  letter-spacing: -0.05em;
+}
+
+#footer>div:first-of-type {
+  position: relative;
+  background: #1f282e;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer ul.left {
+  margin-top: 0.4rem;
+}
+
+#footer ul.left li+li {
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+
+#footer ul.left li+li {
+  border-left: 1px solid #8f9497;
+}
+
+a {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.horizontal {
+  font-size: 0;
+  letter-spacing: -4px;
+  line-height: 0;
+}
+
+.right {
+  float: right;
+}
+
+aside {
+  display: block;
+}
+
+.sns_youtube {
+  background-position: left top;
+}
+
+*[class^="sns_"] {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url(/poimage/ico_sns.png);
+  background-repeat: no-repeat;
+  background-size: 27px auto;
+}
+
+aside {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+*[class^="link_"]::after {
+  display: inline-block;
+}
+
+.horizontal>* {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+footer {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 100%;
+}
+
+#footer .copyright {
+  position: relative;
+  background: #fff;
+}
+
+section {
+  display: block;
+}
+
+span {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 100%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+img {
+  max-width: 100%;
+}
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em
+, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer,
+ header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 100%;
+ }
