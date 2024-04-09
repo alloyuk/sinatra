@@ -1,0 +1,54 @@
+#container{
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  margin: auto;
+
+}
+
+#prod-pic, #desc{
+  float:left;
+}
+
+#prod-pic{
+  margin: 20px, 20px, auto 10px;
+}
+
+#qq{
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 3px black;
+  outline: 1px dasher white;
+  outline-offset: -7px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+
+#small-pic img:hover{
+  cursor: pointer;
+}
+
+
+.oo{
+  width: 60px;
+  height: 60px;
+}
+
+.ww{
+  color: blue;
+  font-weight: bold;
+}
+
+button{
+  width: 300px;
+  height: 30px;
+}
+

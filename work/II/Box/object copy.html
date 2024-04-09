@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>콘텐츠 조작</title>
+  <!--<script defer src="/Box/object.js"></script>-->
+  <style>
+    .active {
+      color: aliceblue;
+      font-size: 20px;
+      background-color: red;
+      font-weight: bold;
+    }
+
+    .red-color{
+      color:red;
+    }
+    .fz20{
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <button data-cnt="10">가방 구매</button>
+  <button data-cnt="0">신발 구매</button>
+  <!--<p id="title" class="red-color fx40">Hello, <span style="display: none;">javaScript!</span></p> -->
+  <!--<p id="textContent"></p>
+  //<p id="innerText"></p>
+  //<p id="innerhtml"></p> -->
+  <script>
+    const  buttonEls = document.querySelectorAll("button");
+    buttonEls.forEach((el) =>{
+      //console.log(el.dataset.cnt); // dataest: data-* 내가 정의한 속성에 대한 정보를 가져올 때
+      el.dataset.cnt = 50; // 내가 작성한 속성(data-cnt)의 값을 변경할 때
+
+    })
+
+    
+    /*const pEl = document.querySelector("#title");
+    setInterval(function(){
+      pel.classList.toggle("red-color");
+    })*/
+    //pEl.classList.remove("red-color"); // 클래스 속성 삭제
+    //pEl.classList.add("red-color", "fx20"); // 클래스 속성 추가
+    //pEl.style.color ="white";
+    //pEl.style.backgroundColor = "red";
+    //pEl.style.fontSize = "20px";
+
+
+   // document.querySelector("#texttContent").textContent = '<strong>textContent</strong>';
+    //document.querySelector("#innerText").innerText = '<strong>innerText</strong>;'
+   // document.querySelector("#innerhtml").innerHTML = '<strong>innerhtml</strong>;'
+    //document.getElementById("title").textContent; // Hello, JavaScript!
+    //document.getElementById("title").innerText; //  Hello,
+    //document.getElementById("title").innerHTML;
+    // Hello, <span style="display: none;"> JavaScript!</spna>
+   // console.log(document.getElementById("title").textContent);
+    //console.log(document.getElementById("title").innerText);
+    //console.log(document.getElementById("title").innerHTML);
+  </script>
+
+</body>
+</html>

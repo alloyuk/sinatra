@@ -1,0 +1,134 @@
+/*전체 선택자
+*{
+  color: red;
+}
+태그 선택자
+h3{
+  background-color: antiquewhite;
+}
+클래스 선택자
+.style-2{
+  color: rgb(243, 70, 223);
+}
+#title{
+  background-color: chartreuse;
+}*/
+/* 일치 선택자
+span.orange{
+  color: red;
+}*/
+
+/* 자식 선택자 : > 이 기호를*/
+/*ul > .orange {
+  color: blue;
+}
+div > div{
+  color: tomato;
+}
+/* 하위 선택자 : 공백을 */
+div .span {
+  color: red;
+}
+/* 인접 형제 선택자 : + */
+/*.orange + li{
+  color: red;
+}*/
+/* 일반 형제 선택자 : ~ */
+/*.orange ~ li{
+  color: red;
+}*/
+
+/* 가상 클래스 선택자 : 약 60개
+- 링크 가상 클래스 : link : visited */
+a:link{
+  color: orange;
+}
+a:visited{
+  color: green;
+}
+
+/* 동적 가상 클래스 : hover : activ */
+a:hover {
+  text-decoration: none;
+  background-color: red;
+}
+button:active {
+  background-color: aqua;
+}
+/* 입력 요소 가상 클래스 : focus : checked
+: disabled : enabled */
+/*input:focus {
+  background-color: chocolate;
+}
+input:checked+label {
+  color: red;
+}
+input:disabled {
+  background-color: aquamarine;
+}
+input:checked+label{
+  color: red;
+}
+/* 구조적 가상 클래스 선택자 */
+/*p:nth-child(1){
+  color: red;
+}
+
+p:nth-last-child(2){
+  color: blue;
+}*/
+
+P:nth-of-type(2){
+  color: red;
+}
+/*li:first-child(){
+  color: green;
+}
+li:last-child(){
+  color: blueviolet;
+}*/
+
+li:nth-child(2n) { /*홀수 짝수? 1n+n, 2n+,*n 등등*/
+  color: red;
+}
+
+li:nth-child(2n+1){
+  color: blue;
+}
+
+/* 가상요소 선택자: 14개 : 가상요소선택자 교재 147페이지*/
+
+.box::before{ /*CSS에서 새로운 콘텐츠를 생성할 때*/
+  content: "앞!!!!!!";
+}
+
+.box::after{
+  content:"뒤!!!"
+}
+
+/* 속성 선택자 [] 기호를 작성 */
+[disabled] {
+  color: red;
+}
+
+[type] {
+  color: blue;
+}
+
+[type="password"] {
+  color: blueviolet;
+}
+
+[value="서효정"] {
+  color: chartreuse;
+}
+
+a[href] { /* href 속성을 가지고 있는 A요소를 선택 */
+  
+}
+#title[href] {
+
+}
+.title[href] {
+
+}

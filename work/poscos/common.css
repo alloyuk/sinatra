@@ -1,0 +1,12 @@
+.gnb {
+  min-height: 80px;
+  padding: 10px 0.5rem 0 10.5rem;
+  font-size: 0;
+  letter-spacing: -4px;
+  line-height: 0;
+}
+
+div.skip {
+  width: 200px;
+  height: 80px;
+}

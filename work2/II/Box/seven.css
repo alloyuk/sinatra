@@ -1,0 +1,141 @@
+.red-box { /* 전환 */
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.red-box:hover {
+  background-color: blue; /* 포인터 감지 색변경 hover */
+  width: 200px;
+  height: 200px;
+}
+
+/* .container {
+  padding: ;
+  background-color: white;
+
+}
+
+.bar {
+  background-color: brown;
+  width: 10px;
+  transition-property: width;
+  transition-duration: 5s;
+  /* 늘어나라 막대 
+}
+
+/* .bar:hover {
+  width: 200px;
+}
+
+.bar:nth-child(5n) {
+  transition-timing-function: ease-in-out ;
+  /* 속도 조절 
+
+}  */
+
+/* .red-box {
+  height: 200px;
+} */
+
+.container { /* 변환 */
+  padding: 10x;
+  color: white;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  margin: 10px;
+
+}
+
+.bar {
+  width: 100px;
+  background-color: red;
+  transition-property: width;
+  transition-duration: 1s;
+  margin-bottom: 10px;
+
+}
+
+.container:hover .bar{
+  width: 200px;
+
+}
+
+.bar:nth-child(1) {
+  transition-timing-function: line;
+}
+.bar:nth-child(2) {
+  transition-timing-function: ease;
+}
+.bar:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+.bar:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+.bar:nth-child(5) {
+  transition-timing-function: ease-in-out;
+}
+
+
+/* 변환 */
+.blue-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  font-size: 40px;
+}
+
+.blue-box:hover {
+  /* transform: translate(100px, 200px);
+  transform: scale(1.5);
+  transform: skew(30deg, 30deg); */
+  /* transform-origin: top left ;
+  transform: rotate(30deg); */
+  /* transform: perspective(500px) rotate(30deg); */
+  /* transform: perspective(300px) rotateX(45deg); */
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+/* 애니메이션 : 키프레임 */
+.ani-keyframe {
+  width: 100px;
+  height: 100px;
+  border-color: red;
+  animation-name: bgchange; /* 임의로 지정 */
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgchange {
+  /* from { background-color: red;}
+  to { background-color: green;} */
+  0% { background-color: red;}
+  25% { background-color: green;}
+  50% {background-color: gold;}
+  75% {background-color: blue;}
+  100% {background-color: skyblue;}
+}
+
+.nemo {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: red;
+  animation-name: shapechange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse; /* 반대로 */
+
+}
+
+@keyframes shapechange {
+  from { border-radius: 0%;}
+  50% { transform: scale(1.5);}
+  to { border-radius: 50%;
+  background-color: blue;}
+
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경색 바꾸기</title>
+  <link rel="stylesheet" href="test.css">
+
+</head>
+<body>
+  <ul>
+    <li><a href="#" onclick="changeBg('Green')">Green</a></li>
+    <li class="list"><a href="#" onclick="changeBg('Orange')">Ornage</a></li>
+    <li class="limit"><a href="#" onclick="changeBg('Purple')">Purple</a></li>
+  </ul>
+  <div ></div>
+  <script>
+    function changeBg(color){
+      const re = document.querySelector("div");
+      re.style.backgroundColor=color;
+        alert("변경");
+        
+    }
+  </script>
+  
+  
+  
+</body>
+</html>

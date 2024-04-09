@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트</title>
+</head>
+<body>
+  <!-- 이벤트 등록
+  1. 인라인 방식
+  2. 프로퍼티 리스너
+  3. 이벤트 등록 메서드 -->
+
+  <!--<button onclick="clickEvent()">클릭</button> //1. 인라인 방식 
+  <script>
+    function clickEvent(){
+      alert("click");
+    }
+  </script>-->
+
+  <!-- 2. 프로퍼티 리스너
+  <button>클릭</button>
+  <script>
+  const btnEl = document.querySelector("button");
+  btnEl.onclick = function(){
+    alert("프로퍼티 리스너 표현식");
+  }
+  btnEl.onclick = () => { //화살표함수
+    alert("프로퍼티 리스너 화살표");
+  }
+  btnEl.onclick = clickEvent;
+  function clickEvent(){
+    alert("프로퍼티 리스너 선언");
+  }
+  </script> -->
+
+  <!-- 3. 이벤트 등록 메서드로 이벤트 등록
+  <노드>.addEvnetListener("이벤트타입", 이벤트함수) -->
+  <!--<button>클릭</button>
+  <script>
+    const btnEl = document.querySelector("button");
+    btnEl.addEventListener("click", function(){ // 이벤트 객체
+      alert("addEventListener 등록 ");
+    })
+  </script>-->
+  <button>클릭</button>
+  <script>
+    const btnEl = document.querySelector("button");
+    btnEl.addEventListener("mouseover", function(event){ // 이벤트 객체
+      console.log(event);
+    })
+
+    const aEls = document.querySelectorAll("a");
+    for(let i=0; i< aEls.length; i++){
+      aEls[i].addEventListener("click", function(e){
+        // 기본 이벤트 취소
+        e.preventDefault();
+      })
+    }
+  </script>
+  
+  
+</body>
+</html>

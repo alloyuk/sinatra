@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그룹(공간나누기) 만들기</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+
+    }
+  </style>
+</head>
+<body>
+  <!--블록요소: 요소들이 상자처럼 세로방향으로 쌓인다
+                 div, hn-->
+  <div style="width: 100px; height: 200px; background-color: antiquewhite;">
+    <p>영화소개</p>
+    <p>영화 소개하는 영역</p>
+  </div>
+  <div style="width: 100px; height: 200px; background-color: aquamarine;">
+    <p>tv 프로그램 소개</p>
+    <p>tv 프로그램을 소개하는 영역</p>
+  </div>
+  <!--인라인요소 : 요소들이 가로방향으로 쌓인다
+                 span, em, sub/sup, img, a-->
+  <div style="width: 500px; background-color: goldenrod;">
+    <span>tv 프로그램 소개</span>
+    <span>tv 프로그램 소개하는 영역</span>
+  </div>
+  <!--이미지 삽입-->
+    <img src="/image/cat_01.jpg" width="200px" height="200px" alt="고양이">
+    <img src="../image/cat_01.jpg" width="200px" height="200px" alt="고양이2">
+
+
+
+  <!--링크-->
+  <div>
+    <a href="https://www.naver.com">
+      <img src="/image/main naver.png">
+    </a>
+    <a href="https://www.google.com" target="_blank">
+      <img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+    </a>
+    
+  </div>
+  <!--목록 만들기 : 순서없는-->
+  <h1>판매중인 과일</h1>
+  <ul>
+    <li>바나나</li>
+    <li>apple</li>
+    <li>orange</li>
+  </ul>
+   <!--목록 만들기 : 순서있는-->
+   <h1>오늘 할일</h1>
+   <ol>
+    <li>아침먹기</li>
+    <li>출근하기</li>
+    <li>점심먹기</li>
+    <li>퇴근하기</li>
+   </ol>
+   <!--정의형 목록 만들기 -->
+   <dl>
+    <dt>html</dt>
+    <dd>html은 하이퍼마크업랭귀지의 약자로 웹문서의 구조를 설계하기 위한 목적으로 개발된 언어</dd>
+    <dt>css</dt>
+    <dd>css는 cascading style sheet의 약자로 웹문서를 꾸미기 위한 목적으로 개발된 언어</dd>
+   </dl>
+
+   <!--표 만들기 -->
+   <table style="width: 100%;">
+    <caption>판매목록</caption>
+    <tr><th>번호</th><th>상품명</th><th>수량</th><th>가격</th><th>비고</th></tr>
+    <tr><td>1</td><td>콜라</td><td>3개</td><td>1,500</td><td rowspan="3"></td></tr>
+    <tr><td>2</td><td>사이다</td><td>5개</td><td>3,500</td></tr>
+    <tr><td>3</td><td>커피</td><td>5개</td><td>5,500</td></tr>
+    <tr><td>합계금액</td><td colspan="4">10,500원</td></tr>
+   </table>       
+</body>
+</html>

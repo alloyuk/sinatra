@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button>출력</button>
+  <a href="https://www.naver.com">네이버 이동</a>
+  <a href="https://www.daum.net">다음 이동</a>
+
+
+  <p>text-1</p>
+  <p>text-2</p>
+  <p>text-3</p>
+
+  <script>
+    const pEls = document.querySelectorAll("p");
+    pEls.forEach((el)=> {
+      el.addEventListener("click", (e) => { // 아래활성화 e삭제
+        //console.log(this);
+        console.log(e.target); // 이벤트가 발생한 노드를 가져옴
+      });
+    })
+
+
+///const pEls = document.querySelectorAll("p");
+///pEls.forEach((el)=> {
+///  el.addEventListener("click", function(){
+///    if(this.style.color === 'red'){
+///      this.style.color = 'black';
+///    }else{
+///      this.style.color = 'red';
+///    }
+///  });
+///}) 
+
+    const btnEl = document.querySelector("button");
+    btnEl.addEventListener("mouseover", function(event){ // 이벤트 객체
+      console.log(event);
+    })
+
+    const aEls = document.querySelectorAll("a");
+    for(let i=0; i< aEls.length; i++){
+      aEls[i].addEventListener("click", function(e){
+        // 기본 이벤트 취소
+        e.preventDefault();
+      })
+    }
+  </script>
+  
+</body>
+</html>
