@@ -1,0 +1,180 @@
+body {
+   font-family: ''; 
+   font-weight: bold;
+} 
+
+body{ 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+}
+
+
+/* 배경 사진 영역 */
+.cat {
+  background-image: url(/img/6540.jpg);
+}
+.bird {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/img/1284.jpg);
+}
+
+.profile {
+  background-image: none;
+}
+
+.computer {
+  
+}
+
+/* 이력서? 꾸미기 영역 */
+
+
+.h1.do{
+  text-align: center;
+  font-size: 60px;
+  border-top: 3px solid rgb(0, 102, 255);
+  border-bottom: 3px solid rgb(0, 102, 255);
+
+}
+table{
+  width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+  text-align: center;
+    }
+
+td,th{
+  width: 20%;
+  border: 1px solid black;
+
+}
+tr{
+  height: 30;
+}
+
+
+/* 애니메이션 이미지 */
+ .visual {
+  margin-top: 120px;
+  background-image: url("/img/1280.jpg");
+  background-position: center;
+ }
+
+ .visual .inner {
+  height: 300px;
+ }
+
+
+
+ .visual .City1.image {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  
+ }
+
+ .visual .City2.image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 162px;
+ }
+
+ .visual .City3.image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 186px;
+
+ }
+
+ .low{
+  background-color: black;
+  height: 20px;
+ }
+
+
+
+ .end{
+  background-color: gray;
+  height: 100px;
+  text-align: right;
+ }
+ .logoimg {
+  width: 50px;
+  height: 50px;
+  
+ }
+
+ .end2 {
+  text-align: right;
+  height: 50px;
+  
+ }
+
+ .end.end.logo{
+  width: 100px;
+  height: 100px;
+ }
+
+
+ /* 암드 소개 */
+ h2 {
+  font-weight: bold;
+ }
+
+ .AMD {
+  box-shadow: -1px 1px 0 #000, inset -1px 1px 0 hsla(0, 0%, 100%, .2);
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(79.54deg, rgba(90, 90, 90, .7) 16.78%, hsla(0, 0%, 41%, .3) 46.33%, hsla(0, 0%, 71%, .8) 73.76%, hsla(0, 0%, 100%, .7) 94.21%);
+    border: 0;
+    border-radius: 2px;
+    font-weight: 600;
+    padding: 0.3rem 2rem;
+    
+ }
+
+ .sks {
+  background-color: #000;
+ }
+ 
+ .asd {
+  color: #fff;
+  background-image: url(/img/6101.jpg);
+ }
+
+ /* 카드 영역 */
+ .card-body {
+  background-color: #000;
+  color: #fff;
+ }
+
+ small {
+  color: antiquewhite;
+ }
+
+ .shk {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  background-size: auto;
+  font-weight: bold;
+  height: 50px;
+  font-size: 30px
+ }
+
+ .aip {
+  background-color: #000;
+  color: #fff;
+ }
+
+
+.con {
+  background-color: #000;
+  color: #fff;
+ }
